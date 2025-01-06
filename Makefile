@@ -10,7 +10,7 @@ TARGET = badgemagic-ch582
 # Uncomment below line to enable debugging
 # DEBUG = 1
 # Uncomment below to build for USB-C version
-# USBC_VERSION = 1
+USBC_VERSION = 1
 # optimization for size
 OPT = -Os
 

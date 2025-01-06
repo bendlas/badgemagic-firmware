@@ -141,6 +141,13 @@ CFLAGS += -DVERSION='"$(VERSION)"' -DVERSION_ABBR='"$(VERSION_ABBR)"'
 # Generate dependency information
 CFLAGS += -MMD -MP
 
+# Use soft interrups, because of missing proprietary feature (WCH-Interrupt-fast)
+# TODO: fix for mainline gcc, see:
+#  https://github.com/hydrausb3/riscv-none-elf-gcc-xpack
+#  https://www.eevblog.com/forum/microcontrollers/ch32v003-fast-interrupt-(pfic)-features/
+#  https://www.reddit.com/r/RISCV/comments/126262j/notes_on_wch_fast_interrupts/
+CFLAGS += -DINT_SOFT
+
 
 #######################################
 # LDFLAGS

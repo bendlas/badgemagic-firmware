@@ -157,7 +157,7 @@ CFLAGS += -DINT_SOFT
 LDSCRIPT = CH5xx_ble_firmware_library/Ld/Link.ld 
 
 # libraries
-LIBS = -lc -lm -lnosys \
+LIBS = -lc -lnosys \
 	./CH5xx_ble_firmware_library/StdPeriphDriver/libISP583.a \
 	./CH5xx_ble_firmware_library/BLE/LIBCH58xBLE.a \
 
